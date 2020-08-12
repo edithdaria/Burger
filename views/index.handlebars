@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 burgerImage">
             <center>
                 <img class="rounded mx-auto d-block"
                     src="/assets/img/burger_img.jpg">
@@ -11,23 +11,23 @@
 
     <div class="row">
         <div class="col-sm-6 col-md-5 col-lg-6">
-            <ul>
+            <ol class = "list-group-item list-group-item-danger">
                 {{#each burgers}}
                 {{#unless devoured}}
                 {{> burgers/burger-block devoured=false}}
                 {{/unless}}
                 {{/each}}
-            </ul>
+            </ol>
         </div>
 
         <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
-            <ul>
+            <ol class = "list-group-item list-group-item-success">
                 {{#each burgers}}
                 {{#if devoured}}
                 {{> burgers/burger-block devoured=true}}
                 {{/if}}
                 {{/each}}
-            </ul>
+            </ol>
         </div>
     </div>
 

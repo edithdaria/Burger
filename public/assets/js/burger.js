@@ -16,14 +16,14 @@ $(function() {
       data: newdevourStatus
     }).then(
       function() {
-        console.log("changed devour status to ", devourStatus);
+        console.log("changed devour status to ", newdevourStatus);
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 
-  $(".btn").on("click", function(event) {
+  $(".btn-primary").on("click", function(event) {
 
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
