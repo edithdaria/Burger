@@ -17,7 +17,7 @@ A burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM
 
 
 ## Installation
-[Click Here to Launch in Heroku](https://git.heroku.com/frozen-tundra-34124.git)
+[Click Here to Launch in Heroku]https://frozen-tundra-34124.herokuapp.com/)
 
 ## Usage
 Experiment by entering burger names and moving the burger entries from left to right using "Devour It!" button
