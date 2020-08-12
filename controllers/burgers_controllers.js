@@ -21,7 +21,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res){
-    burger.create(["burger_name"], [req.body.burger_name], function(result){
+    burger.create("burger_name, devoured", [req.body.burger_name, false], function(result){
 
         //send back the ID of the new entry
         res.json({id: result.insertId });
@@ -29,6 +29,8 @@ router.post("/api/burgers", function(req, res){
 });
 
 router.put("/api/burgers/:id", function(req, res) {
+console.log(req.params.id);
+console.log(req.body);
 
     let condition = "id = " + req.params.id;
 
